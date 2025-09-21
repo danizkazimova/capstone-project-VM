@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="quiz on html">
+        <meta name="author" content="Daniz Kazimova">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questionnaire</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body style="background-color: antiquewhite;">
+        <header>
+            <table>
+                    <td><h2>Knowledge Questionnaire</h2></td>
+                    <nav>
+                    <td style="width:200px; text-align:center;"><a href="Home.html" target="_blank">Home</a></td>
+                    <td style="width:200px; text-align:center;"><a href="Schedule.html" target="_blank">Schedule</a></td>
+                    <td style="width:200px; text-align:center;"><a href="Education.html" target="_blank">Education</a></td>
+                    <td style="width:200px; text-align:center;"><a href="Contact.html" target="_blank">For Contact</a></td>
+                    </nav>
+            </table>
+            <hr>
+        </header>
+        
+        <main>
+            <form action="mailto:dkazimova15288@ada.edu.az" method="POST" enctype="text/plain">
+                <label for="fname">Enter Your Full Name:</label>
+                <input type="text" name="fname" id="fname" required><br><br>
+
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email">
+                
+            <ol>
+                <li>Have you ever created HTML page?</li>
+                <input type="radio" name="answer" id="yes" value="Yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="answer" id="no" value="No">
+                <label for="no">No</label><br>
+
+                <li>Which are valid Html input types?</li>
+                <input type="checkbox" name="answer2" id="text" value="text">
+                <label for="text">Text</label><br>
+                <input type="checkbox" name="answer2" id="email" value="email">
+                <label for="email">Email</label><br>
+                <input type="checkbox" name="answer2" id="checkbox" value="checkbox">
+                <label for="checkbox">Checkbox</label><br>
+                <input type="checkbox" name="answer2" id="passwd" value="password">
+                <label for="passwd">Password</label><br>
+                <input type="checkbox" name="answer2" id="table" value="Table">
+                <label for="table">Table</label><br>
+
+                <li>Which tag is used for creating cells in table? </li>
+                <input type="radio" name="answer3" value="<table>" id="table">
+                <label for="table">&lt;table&gt;</label><br>
+                <input type="radio" name="answer3" value="<td>" id="td">
+                <label for="td">&lt;td&gt;</label><br>
+                <input type="radio" name="answer3" value="<tr>" id="tr">
+                <label for="tr">&lt;tr&gt;</label><br>
+                <input type="radio" name="answer3" value="<tbody>" id="tbody">
+                <label for="tbody">&lt;tbody&gt;</label><br>
+
+                <li>Rate your confidence with HTML (1-5):</li><br>
+                <input type="number" name="rating" min="1" max="5" required><br><br>
+                
+
+                <li><label for="topic">Which topics would you like to learn more?</li>
+                <textarea name="topics" id="topic" rows="7" cols="30"></textarea>
+            </ol>
+
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+
+
+            
+            </form>
+        </main>
+
+        <footer>
+            <hr>
+            <p>22.09.2025</p>
+        </footer>
+    </body>
+
+</html>

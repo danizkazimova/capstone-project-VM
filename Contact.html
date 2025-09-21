@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="page for contacting with me">
+        <meta name="author" content="Daniz Kazimova">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Contact</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    
+    <body style="background-color:antiquewhite">
+        <header>
+            <table>
+                <tr>
+                    <td><h2> Contact &#128222 </h2></td>
+                    <nav>
+                    <td style="text-align: center; width: 200px;"><a href="Home.html" target="_blank">Home</a></td>
+                    <td style="text-align: center; width: 200px;"><a href="Education.html" target="_blank">Education</a></td>
+                    <td style="text-align: center; width: 200px;"><a href="Schedule.html" target="_blank">Weekly Schedule</a></td>
+                    <td style="width:200px; text-align:center;"><a href="Questionnaire.html" target="_blank">Questionnaire</a></td>
+                    </nav>
+                </tr>
+            </table>
+            <hr>
+        </header>
+        
+        <main>
+            <form action="mailto:dkazimova15288@ada.edu.az" method="POST" enctype="text/plain">
+
+                <label for="reason">Reason for Contact</label><br>
+                <select id="reason" name="reason">
+                    <option value="default"></option>
+                    <option value="Collaboration">Collaboration</option>
+                    <option value="Suggestion">Suggestion</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
+
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+
+                <label for="lname">Last Name:</label> <br>
+                <input type="text" id="lname" name="lname" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea name="message" id="message" rows="10" cols="50" required></textarea><br>
+
+
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+
+            </form>
+        </main>
+    </body>
+
+</html>
